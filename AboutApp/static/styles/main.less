@@ -1,9 +1,18 @@
 // Variables
 @color-sky: #caebf2;
 @color-watermelon: #ff383f;
+@color-rust: #C87964;
 @color-carbon: #a9a9a9;
 @color-neutral: #efefef;
 @color-black: #313131;
+@color-white: #fcfffd;
+@color-goldenrod: #fffb75;
+
+// Color Variants
+@color-pale-sky: #e1f3f8;
+@color-pale-watermelon: lighten(@color-watermelon, 20%);
+@color-dark-sky: darken(@color-sky, 20%);
+@color-dark-watermelon: darken(@color-watermelon, 20%);
 
 // Link Colors
 @link-color: @color-watermelon;
@@ -17,6 +26,28 @@ a:hover {
     color: @link-color-hover;
 }
 
-div {
-    background-color: @color-neutral
+body {
+    background-color: @color-white;
+    color: @color-black;
+}
+
+.header {
+    background-color: @color-rust;
+    color: @color-neutral;
+}
+
+.jumbotron {
+    background-color: @color-pale-sky;
+    color: @color-black;
+    margin-bottom: 0rem;
+}
+
+footer {
+    background-color: @color-carbon;
+    color: @color-white;
+}
+
+.main-feed {
+    background-color: @color-neutral;
+    max-width: 575px;
 }

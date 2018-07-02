@@ -5,6 +5,24 @@ a,
 a:hover {
   color: #ff050e;
 }
-div {
+body {
+  background-color: #fcfffd;
+  color: #313131;
+}
+.header {
+  background-color: #C87964;
+  color: #efefef;
+}
+.jumbotron {
+  background-color: #e1f3f8;
+  color: #313131;
+  margin-bottom: 0rem;
+}
+footer {
+  background-color: #a9a9a9;
+  color: #fcfffd;
+}
+.main-feed {
   background-color: #efefef;
+  max-width: 575px;
 }

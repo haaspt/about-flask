@@ -1,11 +1,64 @@
 {% extends "base.html" %}
+
 {% block head %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <title>{{ title }}</title>
 {% endblock %}
 
 {% block body %}
-<div>
-    <a href="www.google.com">A Useful Website</a>
+<header>
+    <div class="container-fluid header">
+        <div class="row mh-100 ">
+            <div class="col-md-1 my-auto">
+                <span><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="col-md-4 offset-md-3 my-auto">
+                <span class="text-center">
+                    <h4>Some Content</h4>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+                <h2 class="display-4">More Content</h2>
+                <p class="lead">Probably an image behind this opaque background.</p>
+            </div>
+            <div class="col-md-8">
+            </div>
+        </div>
+        
+    </div>
 </div>
+<div class="content container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 main-feed">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc. Iaculis at erat pellentesque adipiscing. Integer vitae justo eget magna fermentum iaculis eu non diam. Tellus mauris a diam maecenas sed. Rutrum quisque non tellus orci ac auctor augue. Morbi leo urna molestie at. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Nisl purus in mollis nunc sed id semper risus. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Facilisi morbi tempus iaculis urna id volutpat lacus. Et tortor at risus viverra adipiscing at in tellus. Eget mi proin sed libero enim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Accumsan lacus vel facilisis volutpat. Massa enim nec dui nunc mattis.</p>
+            <p>Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Leo vel orci porta non pulvinar neque. Gravida cum sociis natoque penatibus et magnis dis. At tellus at urna condimentum mattis. Neque ornare aenean euismod elementum nisi. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Dolor morbi non arcu risus quis. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan lacus. Faucibus turpis in eu mi. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Cum sociis natoque penatibus et. Sem et tortor consequat id porta nibh venenatis cras sed.</p>    
+            <p>Sit amet est placerat in egestas erat. Diam maecenas ultricies mi eget mauris pharetra et. Tristique nulla aliquet enim tortor at auctor urna nunc id. Sed cras ornare arcu dui vivamus arcu. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Cursus euismod quis viverra nibh cras pulvinar. Suspendisse sed nisi lacus sed viverra. Purus semper eget duis at tellus at urna. Nunc sed velit dignissim sodales. Cras tincidunt lobortis feugiat vivamus. Sed augue lacus viverra vitae congue. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Sed risus ultricies tristique nulla. Neque aliquam vestibulum morbi blandit cursus risus at. Tellus molestie nunc non blandit massa enim nec dui nunc. Semper eget duis at tellus at urna condimentum mattis. Enim eu turpis egestas pretium.</p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <span>Copyright Info or Whatever</span>
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}

@@ -9,20 +9,53 @@ body {
   background-color: #fcfffd;
   color: #313131;
 }
-.header {
+nav,
+.navbar {
   background-color: #C87964;
   color: #efefef;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid #a9a9a9;
+  font-size: 1.25em !important;
+}
+nav a,
+.navbar a,
+nav .link,
+.navbar .link {
+  color: #efefef;
+}
+nav a:hover,
+.navbar a:hover {
+  color: #a9a9a9;
+  text-decoration: none;
+}
+nav li,
+.navbar li {
+  padding-left: 2rem;
 }
 .jumbotron {
   background-color: #e1f3f8;
   color: #313131;
-  margin-bottom: 0rem;
+  min-height: 500px;
 }
-footer {
-  background-color: #a9a9a9;
-  color: #fcfffd;
+.content {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .main-feed {
   background-color: #efefef;
-  max-width: 575px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  font-size: .85rem;
+  background-color: #C87964;
+  color: #fcfffd;
+  border-top: 4px solid #a9a9a9;
+}
+footer a {
+  color: #fcfffd;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #C87964;
 }

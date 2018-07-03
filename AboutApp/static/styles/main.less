@@ -31,23 +31,56 @@ body {
     color: @color-black;
 }
 
-.header {
+nav, .navbar {
     background-color: @color-rust;
     color: @color-neutral;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid @color-carbon;
+    font-size: 1.25em !important;
+
+    a,
+    .link {
+        color: @color-neutral;
+    }
+    a:hover {
+        color: @color-carbon;
+        text-decoration: none;
+    }
+
+    li {
+        padding-left: 2rem;
+    }
 }
 
 .jumbotron {
     background-color: @color-pale-sky;
     color: @color-black;
-    margin-bottom: 0rem;
+    min-height: 500px;
 }
 
-footer {
-    background-color: @color-carbon;
-    color: @color-white;
+.content {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .main-feed {
     background-color: @color-neutral;
-    max-width: 575px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    font-size: .85rem;
+    background-color: @color-rust;
+    color: @color-white;
+    border-top: 4px solid @color-carbon;
+
+    a {
+        color: @color-white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: @color-rust;
+    }
 }

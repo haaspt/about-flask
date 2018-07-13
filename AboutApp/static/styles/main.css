@@ -9,20 +9,29 @@ body {
   background-color: #fcfffd;
   color: #313131;
 }
+hr.gradient {
+  border: 0px;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(200, 121, 100, 0), rgba(200, 121, 100, 0.75), rgba(200, 121, 100, 0));
+}
 nav,
 .navbar {
-  background-color: #C87964;
-  color: #efefef;
+  background-color: #fcfffd;
+  color: #313131;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 4px solid #a9a9a9;
+  border-bottom: 4px solid #C87964;
   font-size: 1.25em !important;
+}
+nav .navbar-header,
+.navbar .navbar-header {
+  color: #313131;
 }
 nav a,
 .navbar a,
 nav .link,
 .navbar .link {
-  color: #efefef;
+  color: #313131;
 }
 nav a:hover,
 .navbar a:hover {
@@ -48,14 +57,14 @@ nav li,
 }
 footer {
   font-size: .85rem;
-  background-color: #C87964;
-  color: #fcfffd;
-  border-top: 4px solid #a9a9a9;
+  background-color: #fcfffd;
+  color: #313131;
+  border-top: 4px solid #C87964;
 }
 footer a {
-  color: #fcfffd;
+  color: #313131;
 }
 footer a:hover {
   text-decoration: none;
-  color: #C87964;
+  color: #a9a9a9;
 }

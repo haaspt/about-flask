@@ -31,17 +31,27 @@ body {
     color: @color-black;
 }
 
+hr.gradient {
+    border: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(200, 121, 100, 0), rgba(200, 121, 100, 0.75), rgba(200, 121, 100, 0));
+}
+
 nav, .navbar {
-    background-color: @color-rust;
-    color: @color-neutral;
+    background-color: @color-white;
+    color: @color-black;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 4px solid @color-carbon;
+    border-bottom: 4px solid @color-rust;
     font-size: 1.25em !important;
+
+    .navbar-header {
+        color: @color-black;
+    }
 
     a,
     .link {
-        color: @color-neutral;
+        color: @color-black;
     }
     a:hover {
         color: @color-carbon;
@@ -71,16 +81,16 @@ nav, .navbar {
 
 footer {
     font-size: .85rem;
-    background-color: @color-rust;
-    color: @color-white;
-    border-top: 4px solid @color-carbon;
+    background-color: @color-white;
+    color: @color-black;
+    border-top: 4px solid @color-rust;
 
     a {
-        color: @color-white;
+        color: @color-black;
     }
 
     a:hover {
         text-decoration: none;
-        color: @color-rust;
+        color: @color-carbon;
     }
 }

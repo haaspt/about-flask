@@ -18,79 +18,61 @@
 @link-color: @color-watermelon;
 @link-color-hover: darken(@link-color, 10%);
 
-a,
-.link {
-    color: @link-color;
-}
-a:hover {
-    color: @link-color-hover;
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: @color-black;
 }
 
 body {
-    background-color: @color-white;
-    color: @color-black;
+    border: 8px solid @color-carbon;
+    margin: 0px;
 }
 
-hr.gradient {
-    border: 0px;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(200, 121, 100, 0), rgba(200, 121, 100, 0.75), rgba(200, 121, 100, 0));
+nav {
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
-nav, .navbar {
-    background-color: @color-white;
-    color: @color-black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 4px solid @color-rust;
-    font-size: 1.25em !important;
-
-    .navbar-header {
-        color: @color-black;
-    }
-
-    a,
-    .link {
-        color: @color-black;
-    }
-    a:hover {
-        color: @color-carbon;
-        text-decoration: none;
-    }
-
-    li {
-        padding-left: 2rem;
-    }
+nav-right {
+    padding-top: 1.5em;
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.jumbotron {
-    background-color: @color-pale-sky;
-    color: @color-black;
-    min-height: 500px;
+h1, h2, h3, h3, h4, h5, h5, li {
+    font-weight: bold;
+    margin: 0;
 }
 
-.content {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+li {
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+    font-size: 1.5em;
+    line-height: 1em;
 }
 
-.main-feed {
-    background-color: @color-neutral;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+a {
+    text-decoration: none;
+    color: @color-dark-watermelon;
+}
+
+.list-item {
+    float: left;
+    margin-left: 2em;
+    list-style: none;
 }
 
 footer {
-    font-size: .85rem;
-    background-color: @color-white;
-    color: @color-black;
-    border-top: 4px solid @color-rust;
+    border-top: 1px solid @color-carbon;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    display: block;
+}
 
-    a {
-        color: @color-black;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: @color-carbon;
-    }
+p {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 1.5em;
 }

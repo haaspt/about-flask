@@ -1,11 +1,22 @@
-<!DOCTYPE=html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        {% block head %}
-        {% endblock %}
+        <meta charset="utf-8">
+        <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+        <meta name="description" content="{% block description %}{% endblock %}">
+	    <meta name="author" content="{{ AUTHOR }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" />
+        {% block head %}{% endblock %}
     </head>
     <body>
-        {% block body %}
-        {% endblock %}
+        <header></header>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <footer>
+            <p>Copyright Patrick Tyler Haas 2018</p>
+        </footer>
     </body>
 </html>

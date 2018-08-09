@@ -19,11 +19,16 @@
 @link-color-hover: darken(@link-color, 10%);
 
 body {
-    border: 8px solid @color-carbon;
+    height: 100%;
+    border: 2px solid @color-carbon;
     margin: 0px;
     background-color: @color-pale-sky;
     color: @color-black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
 }
 
 .left {
@@ -80,8 +85,14 @@ nav {
 }
 
 header {
+
+    .profile-picture {
+        height: 75px;
+        width: 75px;
+        background-color: @color-dark-watermelon;
+    }
     
-    .container {
+    .title-container {
         background-color: @color-white;
         display: inline-block;
         padding: 4em;
@@ -92,7 +103,17 @@ header {
     .hero {
         margin-left: 4em;
         margin-right: 4em;
+        min-height: 200px;
+        
     }
+}
+
+.main-container {
+    min-height: 800px;
+    background-color: @color-white;
+    padding: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 footer {

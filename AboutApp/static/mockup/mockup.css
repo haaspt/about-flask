@@ -1,9 +1,13 @@
 body {
-  border: 8px solid #a9a9a9;
+  height: 100%;
+  border: 2px solid #a9a9a9;
   margin: 0px;
   background-color: #e1f3f8;
   color: #313131;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 1.5em;
 }
 .left {
   float: left;
@@ -50,7 +54,12 @@ nav .logo-text {
   font-weight: bold;
   font-size: 14pt;
 }
-header .container {
+header .profile-picture {
+  height: 75px;
+  width: 75px;
+  background-color: #d10007;
+}
+header .title-container {
   background-color: #fcfffd;
   display: inline-block;
   padding: 4em;
@@ -60,6 +69,14 @@ header .container {
 header .hero {
   margin-left: 4em;
   margin-right: 4em;
+  min-height: 200px;
+}
+.main-container {
+  min-height: 800px;
+  background-color: #fcfffd;
+  padding: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 footer {
   padding: 0.5em;

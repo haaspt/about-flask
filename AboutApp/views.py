@@ -8,5 +8,11 @@ SITESUBTITLE = "A little about me"
 
 @app.route("/")
 def main():
-    return render_template("index.html", title="Test!")
+    const_dict = {
+        "AUTHOR": AUTHOR,
+        "SITEURL": SITEURL,
+        "SITENAME": SITENAME,
+        "SITESUBTITLE": SITESUBTITLE
+    }
+    return render_template("index.html", **const_dict)
 

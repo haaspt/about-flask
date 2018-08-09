@@ -10,7 +10,7 @@ nav {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-nav-right {
+.nav-right {
   padding-top: 1.5em;
   float: right;
   display: inline-block;
@@ -41,4 +41,41 @@ a {
   float: left;
   margin-left: 2em;
   list-style: none;
+}
+footer {
+  border-top: 1px solid #a9a9a9;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  display: block;
+}
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+}
+.outer-container {
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: visible;
+  border: 5px solid #78ccde;
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: 13px;
 }

@@ -4,7 +4,7 @@ body {
   margin: 0px;
   background-color: #fcfffd;
   color: #313131;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', Geneva, Verdana, sans-serif;
 }
 a {
   text-decoration: none;
@@ -13,6 +13,14 @@ a {
 a:hover {
   text-decoration: none;
   color: #ff050e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', Geneva, Verdana, sans-serif;
 }
 h1 {
   font-size: 1.5em;
@@ -37,6 +45,7 @@ h2 {
 nav {
   background-color: #efefef;
   border-bottom: 1px solid rgba(239, 239, 239, 0.5);
+  font-family: 'Roboto', Geneva, Verdana, sans-serif;
 }
 nav a {
   text-decoration: none;

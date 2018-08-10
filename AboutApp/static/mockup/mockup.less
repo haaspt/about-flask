@@ -19,13 +19,17 @@
 @link-color: @color-watermelon;
 @link-color-hover: darken(@link-color, 10%);
 
+// Font Styles
+@header-font: 'Roboto', Geneva, Verdana, sans-serif;
+@body-font: 'Raleway', Geneva, Verdana, sans-serif;
+
 body {
     height: 100%;
     border: 2px solid @color-dark-carbon;
     margin: 0px;
     background-color: @color-white;
     color: @color-black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: @body-font
 }
 
 a {
@@ -36,6 +40,10 @@ a {
 a:hover {
     text-decoration: none;
     color: @link-color-hover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @header-font;
 }
 
 h1 {
@@ -67,6 +75,7 @@ nav {
 
     background-color: @color-neutral;
     border-bottom: 1px solid fade(@color-neutral, 50%);
+    font-family: @header-font;
 
     a {
         text-decoration: none;

@@ -59,6 +59,7 @@ nav .logo-box {
   padding: 0.5em;
   border: 4px solid #313131;
   border-radius: .25rem;
+  transition: border-color 0.75s ease;
 }
 nav .logo-text {
   padding-top: 50%;
@@ -81,10 +82,10 @@ header .title-container {
   margin-right: 5%;
 }
 header .hero {
-  margin-left: 4em;
-  margin-right: 4em;
-  min-height: 400px;
-  background-color: #C87964;
+  margin-left: 7%;
+  margin-right: 7%;
+  min-height: 500px;
+  background-color: rgba(200, 121, 100, 0.2);
 }
 .main-container {
   background-color: #fcfffd;
@@ -112,6 +113,10 @@ header .hero {
   margin-bottom: 2rem;
   border-radius: .25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.project-feature .btn-primary {
+  background-color: rgba(209, 0, 7, 0.8);
+  border-color: rgba(209, 0, 7, 0.8);
 }
 footer {
   padding: 0.5em;

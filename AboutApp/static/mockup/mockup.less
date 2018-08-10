@@ -92,6 +92,7 @@ nav {
         padding: 0.5em;
         border: 4px solid @color-black;
         border-radius: .25rem;
+        transition: border-color 0.75s ease;
     }
     
     .logo-text {
@@ -121,10 +122,10 @@ header {
     }
 
     .hero {
-        margin-left: 4em;
-        margin-right: 4em;
-        min-height: 400px;
-        background-color: @color-rust;
+        margin-left: 7%;
+        margin-right: 7%;
+        min-height: 500px;
+        background-color: fade(@color-rust, 20%);
     }
 }
 
@@ -156,7 +157,12 @@ header {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: .25rem;
-    border: 1px solid rgba(0,0,0,.125)
+    border: 1px solid rgba(0,0,0,.125);
+
+    .btn-primary {
+        background-color: fade(@color-dark-watermelon, 80%);
+        border-color: fade(@color-dark-watermelon, 80%);
+    }
 }
 
 footer {

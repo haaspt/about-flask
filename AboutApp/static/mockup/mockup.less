@@ -13,6 +13,7 @@
 @color-pale-watermelon: lighten(@color-watermelon, 20%);
 @color-dark-sky: darken(@color-sky, 20%);
 @color-dark-watermelon: darken(@color-watermelon, 20%);
+@color-dark-carbon: darken(@color-carbon, 20%);
 
 // Link Colors
 @link-color: @color-watermelon;
@@ -20,11 +21,21 @@
 
 body {
     height: 100%;
-    border: 2px solid @color-carbon;
+    border: 2px solid @color-dark-carbon;
     margin: 0px;
     background-color: @color-pale-sky;
     color: @color-black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: @link-color;
+}
+
+a:hover {
+    text-decoration: none;
+    color: @link-color-hover;
 }
 
 h1 {
@@ -47,6 +58,7 @@ h1 {
 nav {
 
     background-color: @color-neutral;
+    border-bottom: 1px solid fade(@color-neutral, 50%);
 
     a {
         text-decoration: none;
@@ -79,6 +91,7 @@ nav {
     .logo-box {
         padding: 0.5em;
         border: 4px solid @color-black;
+        border-radius: .25rem;
     }
     
     .logo-text {
@@ -93,12 +106,15 @@ header {
     .profile-picture {
         height: 200px;
         width: 200px;
-        background-color: @color-dark-watermelon;
+        background-color: @color-neutral;
+        border: 2px solid @color-dark-watermelon;
         border-radius: 50%;
     }
 
     .title-container {
         background-color: @color-white;
+        border-left: 1px solid fade(@color-white, 50%);
+        border-right: 1px solid fade(@color-white, 50%);
         padding: 4em;
         margin-left: 5%;
         margin-right: 5%;
@@ -107,26 +123,50 @@ header {
     .hero {
         margin-left: 4em;
         margin-right: 4em;
-        min-height: 200px;
-        
+        min-height: 400px;
+        background-color: @color-rust;
     }
 }
 
 .main-container {
-    min-height: 800px;
     background-color: @color-white;
+    border-left: 1px solid fade(@color-white, 50%);
+    border-right: 1px solid fade(@color-white, 50%);
     padding: 4em;
     margin-left: 5%;
     margin-right: 5%;
+
+    h1 {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .main-text {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+.project-feature {
+    background-color: @color-dark-carbon;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125)
 }
 
 footer {
     padding: 0.5em;
     background-color: @color-neutral;
+    border-top: 1px solid fade(@color-neutral, 50%);
     text-align: center;
 
     span {
-        font-size: 11pt;
+        font-size: 10pt;
         font-weight: bold;
     }
 }

@@ -1,10 +1,18 @@
 body {
   height: 100%;
-  border: 2px solid #a9a9a9;
+  border: 2px solid #767676;
   margin: 0px;
   background-color: #e1f3f8;
   color: #313131;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #ff383f;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff050e;
 }
 h1 {
   font-size: 1.5em;
@@ -21,6 +29,7 @@ h1 {
 }
 nav {
   background-color: #efefef;
+  border-bottom: 1px solid rgba(239, 239, 239, 0.5);
 }
 nav a {
   text-decoration: none;
@@ -49,6 +58,7 @@ nav li {
 nav .logo-box {
   padding: 0.5em;
   border: 4px solid #313131;
+  border-radius: .25rem;
 }
 nav .logo-text {
   padding-top: 50%;
@@ -58,11 +68,14 @@ nav .logo-text {
 header .profile-picture {
   height: 200px;
   width: 200px;
-  background-color: #d10007;
+  background-color: #efefef;
+  border: 2px solid #d10007;
   border-radius: 50%;
 }
 header .title-container {
   background-color: #fcfffd;
+  border-left: 1px solid rgba(252, 255, 253, 0.5);
+  border-right: 1px solid rgba(252, 255, 253, 0.5);
   padding: 4em;
   margin-left: 5%;
   margin-right: 5%;
@@ -70,21 +83,43 @@ header .title-container {
 header .hero {
   margin-left: 4em;
   margin-right: 4em;
-  min-height: 200px;
+  min-height: 400px;
+  background-color: #C87964;
 }
 .main-container {
-  min-height: 800px;
   background-color: #fcfffd;
+  border-left: 1px solid rgba(252, 255, 253, 0.5);
+  border-right: 1px solid rgba(252, 255, 253, 0.5);
   padding: 4em;
   margin-left: 5%;
   margin-right: 5%;
 }
+.main-container h1 {
+  padding: 2rem;
+  text-align: center;
+}
+.main-container .main-text {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.project-feature {
+  background-color: #767676;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
 footer {
   padding: 0.5em;
   background-color: #efefef;
+  border-top: 1px solid rgba(239, 239, 239, 0.5);
   text-align: center;
 }
 footer span {
-  font-size: 11pt;
+  font-size: 10pt;
   font-weight: bold;
 }

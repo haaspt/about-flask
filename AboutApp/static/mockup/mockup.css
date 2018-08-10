@@ -2,7 +2,7 @@ body {
   height: 100%;
   border: 2px solid #767676;
   margin: 0px;
-  background-color: #e1f3f8;
+  background-color: #fcfffd;
   color: #313131;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -85,7 +85,7 @@ header .hero {
   margin-left: 7%;
   margin-right: 7%;
   min-height: 500px;
-  background-color: rgba(200, 121, 100, 0.2);
+  background-color: rgba(120, 204, 222, 0.2);
 }
 .main-container {
   background-color: #fcfffd;

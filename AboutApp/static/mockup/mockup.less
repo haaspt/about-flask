@@ -58,8 +58,8 @@ h2 {
 }
 
 .navbar {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 nav {
@@ -126,6 +126,11 @@ header {
         padding: 4em;
         margin-left: 5%;
         margin-right: 5%;
+
+        .title {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
     }
 
     .hero {
@@ -141,6 +146,7 @@ header {
     border-left: 1px solid fade(@color-white, 50%);
     border-right: 1px solid fade(@color-white, 50%);
     padding: 4em;
+    padding-bottom: 2em;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -152,15 +158,29 @@ header {
     .main-text {
         margin-left: 6rem;
         margin-right: 6rem;
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .list-container {
+            h2 {
+                margin-left: 1rem;
+            }
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 }
 
 .project-feature {
     background-color: @color-dark-carbon;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: .25rem;
@@ -169,6 +189,20 @@ header {
     .btn-primary {
         background-color: fade(@color-dark-watermelon, 80%);
         border-color: fade(@color-dark-watermelon, 80%);
+    }
+
+    .card {
+        height: 100%;
+        max-width: 325px;
+        min-width: 240px;
+
+        .card-title {
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            text-align: left;
+        }
     }
 }
 

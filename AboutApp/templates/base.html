@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-        <meta name="description" content="{% block description %}{% endblock %}">
-	    <meta name="author" content="{{ AUTHOR }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" />
-        {% block head %}{% endblock %}
-    </head>
-    <body>
-        <header>
-            <div class="outer-container">
-                <nav>
-                    <a class="site-logo" href="/">
-                        <span class="logo-text">PTH</span>
-                    </a>
-                    <ul class="nav-right">
-                        <li>
-                            <a href="/">About Me</a>
-                        </li>
-                        <li>
-                            <a href="/blog">Writing</a>
-                        </li>
-                    </ul>
-                </nav>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{ TITLE }}</title>
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta name="description" content="{{ description }}">
+    {% if og_description %}
+    <meta name="og:title" property="og:title" content="{{ og_description }}">
+    {% endif %}
+    <meta name="keywords" content="{{ keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Raleway" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static/styles/' filename='main.css' }}" />
+    <link rel="shortcut icon" href="{{ url_for('static/scripts/' filename='favicon.ico' }}">
+    <script src="{{ url_for('static/scripts/' filename='main.js') }}"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+                <div class="logo-box">
+                    <span class="logo-text">
+                        <a onmouseover="highlightOuterElement(this);" onmouseout="removeHighlightOuterElement(this);" href="/">PTH</a>
+                    </span>
+                </div>
             </div>
-        </header>
-        <div class="content">
-            {% block content %}{% endblock %}
+            <ul class="right">
+                <li class="navbar-item">
+                    <a class="active" href="/">About</a>
+                </li class="navbar-item">
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+    </nav>
+    {% block header %}
+    {% endblock %}
+    <div class="main-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <div class="container">
+            <span>Copyright <a href="mailto:patrick.tyler.haas@gmail.com">Patrick Tyler Haas</a> 2018</span>
         </div>
-        <footer>
-            <p>Copyright Patrick Tyler Haas 2018</p>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>

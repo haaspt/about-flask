@@ -4,15 +4,13 @@ from AboutApp import app
 AUTHOR = "Patrick Tyler Haas"
 SITEURL = "literallyjustgraphs.com"
 SITENAME = "Patrick Tyler Haas"
-SITESUBTITLE = "A little about me"
 
 @app.route("/")
-def main():
+def about_me():
     const_dict = {
         "AUTHOR": AUTHOR,
         "SITEURL": SITEURL,
-        "SITENAME": SITENAME,
-        "SITESUBTITLE": SITESUBTITLE
+        "description": "My personal portfolio and developer's blog"
     }
     return render_template("index.html", **const_dict)
 

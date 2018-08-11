@@ -40,29 +40,32 @@
         </div>
     </div>
 </div>
+{% if skills or interests %}
 <div class="main-text">
     <div class="container">
         <div class="row">
+            {% if skills %}
             <div class="col list-container">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Proin sed sem sed est tempor facilisis non sed ex.</li>
-                    <li>Curabitur tristique leo id libero dapibus, dapibus lacinia magna porttitor.</li>
-                    <li>Maecenas pretium nibh sagittis urna tincidunt congue.</li>
-                    <li>Morbi pellentesque turpis eget arcu fringilla condimentum ut ut metus.</li>
-                </ul>
-            </div>
+                    <h2>Skills</h2>
+                    <ul>
+                        {% for skill in skills %}
+                        <li>{{ skill }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if interests %}
             <div class="col list-container">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Aenean non lorem lobortis, porttitor augue vitae, dapibus lectus.</li>
-                    <li>Suspendisse sit amet orci eu est imperdiet rutrum nec a erat.</li>
-                    <li>Phasellus consectetur enim tincidunt accumsan rhoncus.</li>
-                    <li>Duis sed quam vestibulum tortor semper suscipit non ut sapien.</li>
-                    <li>Vivamus at neque volutpat, semper libero ac, tincidunt velit.</li>
-                </ul>
-            </div>
+                    <h2>Interests</h2>
+                    <ul>
+                        {% for interest in interests %}
+                        <li>{{ interest }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock %}

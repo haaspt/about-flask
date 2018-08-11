@@ -26,7 +26,26 @@ def about_me():
          "project_link": "#"}
     ]
 
-    return render_template("about.html", projects=projects, **attr_dict)
+    interests = [
+        "Proin sed sem sed est tempor facilisis non sed ex.",
+        "Maecenas pretium nibh sagittis urna tincidunt congue.",
+        "Curabitur tristique leo id libero dapibus, dapibus lacinia magna porttitor.",
+        "Morbi pellentesque turpis eget arcu fringilla condimentum ut ut metus."
+    ]
+
+    skills = [
+        "Aenean non lorem lobortis, porttitor augue vitae, dapibus lectus.",
+        "Suspendisse sit amet orci eu est imperdiet rutrum nec a erat.",
+        "Phasellus consectetur enim tincidunt accumsan rhoncus.",
+        "Duis sed quam vestibulum tortor semper suscipit non ut sapien.",
+        "Vivamus at neque volutpat, semper libero ac, tincidunt velit."
+    ]
+
+    return render_template("about.html",
+                           projects=projects,
+                           skills=skills,
+                           interests=interests,
+                           **attr_dict)
 
 @app.route("/contact")
 def contact():

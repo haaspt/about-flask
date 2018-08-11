@@ -12,5 +12,18 @@ def about_me():
         "SITEURL": SITEURL,
         "description": "My personal portfolio and developer's blog"
     }
-    return render_template("index.html", **const_dict)
+
+    projects = [
+        {"project_title": "Lorem Ipsum",
+         "project_desc": "Donec finibus rutrum massa vitae rutrum. Nulla facilisi.",
+         "project_link": "#"},
+         {"project_title": "Lorem Ipsum",
+         "project_desc": "Suspendisse sit amet orci eu est imperdiet rutrum nec a erat.",
+         "project_link": "#"},
+         {"project_title": "Lorem Ipsum",
+         "project_desc": "Duis sed quam vestibulum tortor semper suscipit non ut sapien. Integer ac lacus sit amet diam dictum ornare.",
+         "project_link": "#"}
+    ]
+
+    return render_template("index.html", projects=projects, **const_dict)
 

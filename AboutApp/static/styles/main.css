@@ -1,81 +1,179 @@
-html {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #313131;
-}
 body {
-  border: 8px solid #a9a9a9;
+  height: 100%;
+  border: 2px solid #767676;
   margin: 0px;
+  background-color: #fcfffd;
+  color: #313131;
+  font-family: 'Raleway', Geneva, Verdana, sans-serif;
 }
-nav {
-  padding-top: 4em;
-  padding-bottom: 4em;
+a {
+  text-decoration: none;
+  color: #ff383f;
 }
-.nav-right {
-  padding-top: 1.5em;
-  float: right;
-  display: inline-block;
-  vertical-align: middle;
+a:hover {
+  text-decoration: none;
+  color: #ff050e;
 }
 h1,
 h2,
 h3,
-h3,
 h4,
 h5,
-h5,
-li {
-  font-weight: bold;
-  margin: 0;
+h6 {
+  font-family: 'Roboto', Geneva, Verdana, sans-serif;
 }
-li {
-  margin-bottom: 1.5em;
-  padding-bottom: 2em;
+h1 {
   font-size: 1.5em;
-  line-height: 1em;
+  font-weight: bold;
 }
-a {
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.navbar {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+nav {
+  background-color: #efefef;
+  border-bottom: 1px solid rgba(239, 239, 239, 0.5);
+  font-family: 'Roboto', Geneva, Verdana, sans-serif;
+}
+nav a {
   text-decoration: none;
+  color: #313131;
+  font-weight: bold;
+  font-size: 14pt;
+}
+nav a:hover {
+  color: #d10007;
+  text-decoration: none;
+}
+nav a.active {
   color: #d10007;
 }
-.list-item {
-  float: left;
-  margin-left: 2em;
-  list-style: none;
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: right;
+}
+nav li {
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+nav .logo-box {
+  padding: 0.5em;
+  border: 4px solid #313131;
+  border-radius: .25rem;
+  transition: border-color 0.75s ease;
+}
+nav .logo-text {
+  padding-top: 50%;
+  font-weight: bold;
+  font-size: 14pt;
+}
+header .profile-picture {
+  height: 200px;
+  width: 200px;
+  background-color: #efefef;
+  border: 2px solid #d10007;
+  border-radius: 50%;
+}
+header .title-container {
+  background-color: #fcfffd;
+  border-left: 1px solid rgba(252, 255, 253, 0.5);
+  border-right: 1px solid rgba(252, 255, 253, 0.5);
+  padding: 4em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+header .title-container .title {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  min-width: 200px;
+}
+header .hero {
+  margin-left: 7%;
+  margin-right: 7%;
+  min-height: 500px;
+  background-color: rgba(120, 204, 222, 0.2);
+}
+.main-container {
+  background-color: #fcfffd;
+  border-left: 1px solid rgba(252, 255, 253, 0.5);
+  border-right: 1px solid rgba(252, 255, 253, 0.5);
+  padding: 4em;
+  padding-bottom: 2em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.main-container h1 {
+  padding: 2rem;
+  text-align: center;
+}
+.main-container .main-text {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.main-container .main-text p {
+  margin-bottom: 1.5rem;
+}
+.main-container .main-text .list-container {
+  min-width: 300px;
+}
+.main-container .main-text .list-container h2 {
+  margin-left: 1rem;
+}
+.main-container .main-text .list-container li {
+  margin-bottom: 0.5rem;
+}
+.project-feature {
+  background-color: #767676;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.project-feature .btn-primary {
+  background-color: rgba(209, 0, 7, 0.8);
+  border-color: rgba(209, 0, 7, 0.8);
+}
+.project-feature .card {
+  height: 100%;
+  max-width: 325px;
+  min-width: 240px;
+}
+.project-feature .card a {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.project-feature .card .card-title {
+  margin-bottom: 1rem;
+}
+.project-feature .card .card-text {
+  text-align: left;
 }
 footer {
-  border-top: 1px solid #a9a9a9;
+  padding: 0.5em;
+  background-color: #efefef;
+  border-top: 1px solid rgba(239, 239, 239, 0.5);
   text-align: center;
-  padding-top: 3em;
-  padding-bottom: 4em;
-  display: block;
 }
-p {
-  font-size: 1.5em;
-  line-height: 2em;
-  margin-bottom: 1.5em;
-}
-.outer-container {
-  padding-left: 2em;
-  padding-right: 2em;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.site-logo {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  overflow: visible;
-  border: 5px solid #78ccde;
-  position: relative;
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
-}
-.logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+footer span {
+  font-size: 10pt;
   font-weight: bold;
-  font-size: 13px;
 }

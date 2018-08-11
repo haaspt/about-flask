@@ -59,3 +59,18 @@ def contact():
 
     return render_template("contact.html", **attr_dict)
 
+@app.route("/love")
+def love():
+
+    return render_template('splash.html', headline='I love you, Ally!')
+
+@app.route("/coming-soon")
+def coming_soon():
+
+    return render_template('splash.html', headline='Coming Soon!', subtitle="I swear I'm working on finishing this...")
+
+@app.errorhandler(404)
+def site_error(e):
+
+    return render_template('splash.html', headline='404\nFile not Found', subtitle="Either you're lost or I broke something...")
+

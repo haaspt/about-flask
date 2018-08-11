@@ -25,5 +25,10 @@ def about_me():
          "project_link": "#"}
     ]
 
-    return render_template("index.html", projects=projects, **const_dict)
+    return render_template("about.html", projects=projects, **const_dict)
+
+@app.route("/contact")
+def contact():
+
+    return render_template("contact.html")
 

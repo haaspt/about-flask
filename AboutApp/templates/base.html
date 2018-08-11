@@ -8,13 +8,15 @@
     {% if og_description %}
     <meta name="og:title" property="og:title" content="{{ og_description }}">
     {% endif %}
+    {% if keywords %}
     <meta name="keywords" content="{{ keywords }}">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Raleway" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static/styles/' filename='main.css' }}" />
-    <link rel="shortcut icon" href="{{ url_for('static/scripts/' filename='favicon.ico' }}">
-    <script src="{{ url_for('static/scripts/' filename='main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
     {% block head %}{% endblock %}
 </head>
 <body>
